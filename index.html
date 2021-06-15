@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOD_ENDING</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="container">
+    <nav>
+        <span class="weather"></span>
+        <span class="mobile">Tablet & Mobile Ver</span>
+        <ul>
+            <li class ="optBtn"><img src="images/gear_light.png" alt="">
+                <ul class="optItems">
+                    <li class="bgColor optList">DARKMODE</li>
+                    <li class="help optList">help</li>
+                    <li class="logOut optList">GoodBye🖐</li>
+                </ul>
+            </li>
+        </ul>        
+    </nav>
+
+    <!-- CLOCK -->
+    <header id="clock" class="frame">
+        <p class="mobile">PC more comfortable</p>
+        <p>Things you can't buy..</p>
+        <h1>00 : 00</h1>
+        <h1 class="sec">00</h1>
+    </header>
+
+    <section class="sec1">
+        <!-- MY INFORMATION -->
+        <article id="my_box" class="frame">
+            <form class="form showing">
+                <input type="text" placeholder="  Who are you ?">
+            </form>
+            <div class="id_box">
+                <p class="hi">Hello, </p>
+
+                <div class="sentence">
+                    <p class="upper">“</p>
+
+                    <div class="array">
+                        <div class="btn1 btn"><span> < </span></div>
+
+                        <div>
+                            <p class="sen korean"></p>
+                            <p class="sen english"></p>
+                            <br>
+                            <p class="sen author"></p>
+                        </div>
+
+                        <div class="btn2 btn"><span> > </span></div>
+                    </div>
+
+                    <p class="upper">”</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- INFORMAION-SNSBARS -->
+        <article id="my_sns">
+
+        </article>
+    </section>
+
+    <!-- TODOLIST -->
+    <section class="sec2">
+        <article class="frame">
+            <form class="toDoForm">
+                <input class="toDoInput" type="text" placeholder="  WHAT TO DO ?">
+            </form>
+            <ul class="toDo">
+
+            </ul>
+            <button class="clean">🗑 CLEAN-LIST 🗑</button>
+        </article>
+    </section>
+
+    <!-- 위치/날씨 -->
+    <footer>
+        <p>@author : SUNGMIN_CHOI</p>
+        <p>화면을 작게 줄여보세요 !</p>
+        <p class="mobile">화면을 크게 키워보세요 !</p>
+    </footer>
+    
+    <script src="js/js_clock.js"></script>
+    <script src="js/js_my_box.js"></script>
+    <script src="js/js_sentence.js"></script>
+    <script src="js/js_to_do.js"></script>
+    <script src="js/js_weather.js"></script>
+    <script src="js/js_nav_bar.js"></script>
+</body>
+</html>

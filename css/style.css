@@ -1,0 +1,366 @@
+:root {
+    --bg-color : rgb(235, 235, 235);
+    --color : rgb(070, 070, 070);
+    --nav-bg-color : rgb(255, 255, 255);
+}
+
+.mobile{
+    display: none;
+}
+
+#container{
+    width: 800px;
+    margin: 80px auto;
+    background-color: var(--bg-color);
+    color : var(--color);
+}
+
+#container .frame{
+    border: 3.5px double var(--color);
+    border-radius: 40px 0px;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Noto Serif KR', 'Nanum Myeongjo';
+}
+
+#container nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Serif KR', serif;
+}
+
+#container nav ul{
+    text-align: center;
+}
+
+#container nav .optBtn{
+    cursor: pointer;
+}
+
+#container nav ul li .optItems{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    font-size: 20px;
+    border: 1px solid var(--color);
+}
+
+#container nav ul li.btnOn .optItems{
+    opacity: 1;
+    visibility: visible;
+}
+
+#container nav ul li .optItems .optList{
+    background-color: var(--nav-bg-color);
+    padding: 5px 3px;
+    border-top: 1px solid var(--color);
+}
+#container nav ul li .optItems .bgColor{
+    border-top: none;
+}
+
+#container #clock p{
+    margin: 40px 0 20px 0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#container #clock h1{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#container .sec1 #my_box{
+    margin : 10px 0;
+    padding: 50px 0 0 0;
+    height: 400px;
+}
+
+#container .sec1 #my_box .form{
+    display: none;
+}
+
+#container .sec1 #my_box .form input{
+    background-color: var(--bg-color);
+    border: none;
+    border-bottom: 2px solid var(--color);
+    color: var(--color);
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#container .sec1 #my_box .id_box{
+    display: none;
+}
+
+#container .sec1 #my_box .id_box .hi{
+    font-size: 60px;
+    text-decoration: 3px underline;
+}
+
+#container .sec1 #my_box .showing{
+    display: block;
+}
+
+#container .sec1 #my_box .id_box .sentence {
+    margin-top: 100px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+}
+
+#container .sec1 #my_box .id_box .sentence .array{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container .sec1 #my_box .id_box .sentence .array div{
+    display: inline-block;
+}
+
+#container .sec1 #my_box .id_box .sentence .array .btn {
+    width: 10%;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#container .sec1 #my_box .id_box .sentence .upper{
+    display: block;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+#container .sec1 #my_box .id_box .sentence .sen{
+    font-size: 16px;
+}
+
+#container .sec2 {
+    display: none;
+}
+
+#container .sec2 .frame {
+    position: relative;
+    height: 600px;
+}
+
+#container .sec2 .frame .clean{
+    position: absolute;
+    left : 45%;
+    bottom : 10px;
+}
+
+#container .sec2 .frame .toDoForm .toDoInput {
+    background-color: var(--bg-color);
+    color: var(--color);
+    border: 2px solid var(--color);
+    width: 400px;
+    height: 40px;
+}
+
+#container .sec2 .frame .toDo{
+    margin: 0 auto;
+    font-size: 18px;
+    width: 405px;
+    border: 1px solid var(--color);
+}
+
+#container .sec2 .frame .toDo li{
+    padding-left: 10px;
+    margin: 10px 0;
+    background-color: var(--bg-color);
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Noto Serif KR', serif;
+}
+
+#container footer{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+}
+
+/*
+@미디어쿼리 
+ver 모바일 & 테블릿
+수정하기
+*/
+@media screen and (max-width : 768px) { 
+
+    .mobile{
+        display: block;
+    }
+
+    #container{
+        width: 700px;
+        margin: 80px auto;
+        background-color: var(--bg-color);
+        color : var(--color);
+    }
+    
+    #container .frame{
+        border: 3.5px double var(--color);
+        border-radius: 0px 0px;
+        text-align: center;
+        font-size: 100px;
+        font-family: 'Big Shoulders Display', 'Nanum Myeongjo';
+    }
+    
+    #container nav{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Noto Serif KR', serif;
+    }
+    #container nav .weather{
+        display: none;
+    }
+    
+    #container nav ul{
+        text-align: center;
+    }
+
+    #container nav .optBtn{
+        cursor: pointer;
+    }
+
+    #container nav ul li .optItems{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s;
+        font-size: 14px;
+        border: 1px solid var(--color);
+    }
+
+    #container nav ul li.btnOn .optItems{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #container nav ul li .optItems .optList{
+        background-color: var(--nav-bg-color);
+        padding: 5px 2px;
+        border-top: 1px solid var(--color);
+    }
+
+    #container nav ul li .optItems .bgColor{
+        border-top: none;
+    }
+
+
+    #container #clock p{
+        margin: 20px 0;
+        font-size: 40px;
+        font-style: unset;
+        color: var(--color);
+        font-family: sans-serif;
+        text-decoration: 2px underline;
+    }
+    
+    #container #clock h1, #container #clock p:last-of-type{
+        display: none;   
+    }
+
+    #container .sec1 #my_box{
+        margin : 10px 0;
+        padding: 50px 0 0 0;
+        height: 300px;
+    }
+    
+    #container .sec1 #my_box .form{
+        display: none;
+    }
+    
+    #container .sec1 #my_box .form input{
+        background-color: var(--bg-color);
+        border: none;
+        border-bottom: 2px solid var(--color);
+        color: var(--color);
+        width: 400px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    #container .sec1 #my_box .id_box{
+        display: none;
+    }
+
+    #container .sec1 #my_box .showing{
+        display: block;
+    }
+    
+    #container .sec1 #my_box .id_box .hi{
+        font-size: 50px;
+        text-decoration: none;
+    }
+    
+    #container .sec1 #my_box .id_box .sentence {
+        margin-top: 0px;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 14px;
+    }
+    
+    #container .sec1 #my_box .id_box .sentence .array{
+        font-size: 20px;
+        display: block;
+    }
+    
+    #container .sec1 #my_box .id_box .sentence .array div{
+    display: inline-block;
+    }
+    
+    #container .sec1 #my_box .id_box .sentence .array .btn {
+        display: none;
+    }
+    
+    #container .sec1 #my_box .id_box .sentence .upper{
+        display: block;
+        font-size: 50px;
+        margin-top: 40px;
+    }
+    
+    #container .sec1 #my_box .id_box .sentence .sen{
+        font-size: 16px;
+    }
+    
+    #container .sec2 {
+        display: none;
+    }
+    
+    #container .sec2 .frame {
+        position: relative;
+        height: 600px;
+    }
+    
+    #container .sec2 .frame .clean{
+        position: absolute;
+        left: 45%;
+        bottom : 10px;
+    }
+    
+    #container .sec2 .frame .toDoForm .toDoInput {
+        background-color: var(--bg-color);
+        border: 2px solid var(--color);
+        width: 400px;
+        height: 40px;
+    }
+    
+    #container .sec2 .frame .toDo{
+        margin: 0 auto;
+        font-size: 18px;
+        width: 405px;
+        border: 1px solid var(--color);
+    }
+    #container .sec2 .frame .toDo li{
+        padding-left: 10px;
+        margin: 10px 0;
+        background-color: var(--bg-color);
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Noto Serif KR', serif;
+    }
+    
+    #container footer p:nth-child(2){
+        display: none;
+    }
+}
